@@ -4,14 +4,33 @@
 		<title>FLINN AP Chemisty Answers</title>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {
+				font-family: sans-serif;
+				margin: 20px 20px 20px 30px;
+				
+			}
+			
+			button {
+				
+				width: 150px;
+				height: 30px;
+				margin: 10px;
+			}
+			
+
 		
+		</style>
 	</head>
 	<body>
 		<h1>FLINN AP Chemisty Answers</h1>
-		<p>I made this to help myself learn chemistry. <br>
-		The answers will display, however the questions will not.</p>
+
 		<button onclick="unit_2();">Show Unit 2 Answers</button>
 		<div id="addHere_2"></div>
+		
+		<button onclick="unit_3();">Show Unit 3 Answers</button>
+		<div id="addHere_3"></div>
+		
 		
 		<script>
 		
@@ -26,6 +45,16 @@
 				}
 			}
 			
+			function unit_3() {
+				var num = 100;
+				for(var i = 0; i < num; i++) {
+					var img = document.createElement("img");
+					theLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Chemical_Reactions/Assets/Images/AnswerImages/question" + i + ".png";
+					img.src = theLink;
+					var src = document.getElementById("addHere_3");
+					src.appendChild(img);
+				}
+			}
 			
 			
 		</script>
