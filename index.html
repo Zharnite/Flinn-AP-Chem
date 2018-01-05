@@ -24,15 +24,31 @@
 	</head>
 	<body>
 		<h1>FLINN AP Chemisty Answers</h1>
-
+		
+		<button onclick="unit_1();">Show Unit 1 Answers</button>
+		<div id="addHere_1"></div>
+		
 		<button onclick="unit_2();">Show Unit 2 Answers</button>
 		<div id="addHere_2"></div>
 		
 		<button onclick="unit_3();">Show Unit 3 Answers</button>
 		<div id="addHere_3"></div>
 		
+		<button onclick="unit_4();">Show Unit 4 Answers</button>
+		<div id="addHere_4"></div>
+		
 		
 		<script>
+			function unit_1() {
+				var num = 100;
+				for(var i = 0; i < num; i++) {
+					var img = document.createElement("img");
+					theLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Nomenclature/Assets/Images/AnswerImages/question" + i + ".png";
+					img.src = theLink;
+					var src = document.getElementById("addHere_1");
+					src.appendChild(img);
+				}
+			}
 		
 			function unit_2() {
 				var num = 100;
@@ -52,6 +68,17 @@
 					theLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Chemical_Reactions/Assets/Images/AnswerImages/question" + i + ".png";
 					img.src = theLink;
 					var src = document.getElementById("addHere_3");
+					src.appendChild(img);
+				}
+			}
+			
+			function unit_4() {
+				var num = 100;
+				for(var i = 0; i < num; i++) {
+					var img = document.createElement("img");
+					theLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Bonding_Basics/Assets/Images/AnswerImages/question" + i + ".png";
+					img.src = theLink;
+					var src = document.getElementById("addHere_4");
 					src.appendChild(img);
 				}
 			}
