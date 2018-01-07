@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>FLINN AP Chemisty Answers</title>
+		<title>FLINN AP Chemistry Answers</title>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
@@ -18,71 +18,54 @@
 				margin: 10px;
 			}
 			
-
 		
 		</style>
 	</head>
 	<body>
-		<h1>FLINN AP Chemisty Answers</h1>
+		<h1>FLINN AP Chemistry Answers</h1>
 		
-		<button onclick="unit_1();">Show Unit 1 Answers</button>
+		<button onclick="unit(1);">Unit 1 Answers</button>
 		<div id="addHere_1"></div>
 		
-		<button onclick="unit_2();">Show Unit 2 Answers</button>
+		<button onclick="unit(2);">Unit 2 Answers</button>
 		<div id="addHere_2"></div>
 		
-		<button onclick="unit_3();">Show Unit 3 Answers</button>
+		<button onclick="unit(3);">Unit 3 Answers</button>
 		<div id="addHere_3"></div>
 		
-		<button onclick="unit_4();">Show Unit 4 Answers</button>
+		<button onclick="unit(4);">Unit 4 Answers</button>
 		<div id="addHere_4"></div>
 		
 		
 		<script>
-			function unit_1() {
+			var unit = function(unitNum) {
 				var num = 100;
+				var chooseLink = "";
+				if(unitNum == 1) {
+					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Nomenclature/Assets/Images/AnswerImages/question";
+				}
+				else if(unitNum == 2) {
+					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Atomic_Structure_and_the_Periodic_Table/Assets/Images/AnswerImages/question";
+				}
+				else if(unitNum == 3) {
+					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Chemical_Reactions/Assets/Images/AnswerImages/question";
+				}
+				else if(unitNum == 4) {
+					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Bonding_Basics/Assets/Images/AnswerImages/question";
+				}
+				else {
+					chooseLink = "";
+				}
+				
 				for(var i = 0; i < num; i++) {
 					var img = document.createElement("img");
-					theLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Nomenclature/Assets/Images/AnswerImages/question" + i + ".png";
+					theLink = chooseLink + i + ".png";
 					img.src = theLink;
-					var src = document.getElementById("addHere_1");
-					src.appendChild(img);
+					var div = document.getElementById("addHere_" + unitNum);
+					div.appendChild(img);
 				}
 			}
 		
-			function unit_2() {
-				var num = 100;
-				for(var i = 0; i < num; i++) {
-					var img = document.createElement("img");
-					theLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Atomic_Structure_and_the_Periodic_Table/Assets/Images/AnswerImages/question" + i + ".png";
-					img.src = theLink;
-					var src = document.getElementById("addHere_2");
-					src.appendChild(img);
-				}
-			}
-			
-			function unit_3() {
-				var num = 100;
-				for(var i = 0; i < num; i++) {
-					var img = document.createElement("img");
-					theLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Chemical_Reactions/Assets/Images/AnswerImages/question" + i + ".png";
-					img.src = theLink;
-					var src = document.getElementById("addHere_3");
-					src.appendChild(img);
-				}
-			}
-			
-			function unit_4() {
-				var num = 100;
-				for(var i = 0; i < num; i++) {
-					var img = document.createElement("img");
-					theLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Bonding_Basics/Assets/Images/AnswerImages/question" + i + ".png";
-					img.src = theLink;
-					var src = document.getElementById("addHere_4");
-					src.appendChild(img);
-				}
-			}
-			
 			
 		</script>
 	</body>
