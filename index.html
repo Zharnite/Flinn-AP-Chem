@@ -89,41 +89,43 @@
 				var div = document.getElementById("addHere_" + unitNum);
 				div.innerHTML = "";
 				var num = 100;
-				var chooseLink = "";
+				var part1Link = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/";
+				var part2Link =  "/Assets/Images/AnswerImages/question";
+				var topicTitle = "";
 				if(unitNum == 1) {
-					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Nomenclature/Assets/Images/AnswerImages/question";
+					topicTitle = "Nomenclature";
 				}
 				else if(unitNum == 2) {
-					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Atomic_Structure_and_the_Periodic_Table/Assets/Images/AnswerImages/question";
+					topicTitle = "Atomic_Structure_and_the_Periodic_Table";
 				}
 				else if(unitNum == 3) {
-					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Chemical_Reactions/Assets/Images/AnswerImages/question";
+					topicTitle = "Chemical_Reactions";
 				}
 				else if(unitNum == 4) {
-					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Bonding_Basics/Assets/Images/AnswerImages/question";
+					topicTitle = "Bonding_Basics";
 				}
 				else if(unitNum == 5) {
-					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Structure_and_Properties/Assets/Images/AnswerImages/question";
+					topicTitle = "Structure_and_Properties";
 				}
 				else if(unitNum == 6) {
-					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Stoichiometry/Assets/Images/AnswerImages/question";
+					topicTitle = "Stoichiometry";
 				}
 				else if(unitNum == 7) {
-					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Gases/Assets/Images/AnswerImages/question";
+					topicTitle = "Gases";
 				}
 				else if(unitNum == 8) {
-					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Solutions/Assets/Images/AnswerImages/question";
+					topicTitle = "Solutions";
 				}
 				else if(unitNum == 9) {
-					chooseLink = "https://www.flinnprep.com/Content/AP_Chemistry_Prep_Course/Acids_and_Bases/Assets/Images/AnswerImages/question";
+					topicTitle = "Acids_and_Bases";
 				}
 				else {
-					chooseLink = "";
+					topicTitle = "";
 				}
 				
 				for(var i = 1; i < num; i++) {
 					var img = document.createElement("img");
-					theLink = chooseLink + i + ".png";
+					theLink = part1Link + topicTitle + part2Link + i + ".png";
 					img.src = theLink;
 					div.appendChild(img);
 				}
