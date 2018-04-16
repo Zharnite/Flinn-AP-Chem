@@ -48,6 +48,7 @@
 				position: relative;
 				top: 80px;
 			}
+			
 		
 		</style>
 	</head>
@@ -60,31 +61,64 @@
 		
 		<div id="content">
 			<button onclick="unit(1);">Unit 1 Answers</button>
+			<span>Nomenclature</span>
 			<div id="addHere_1" class="unit_divs"></div>
 			
 			<button onclick="unit(2);">Unit 2 Answers</button>
+			<span>Atomic Structure and the Periodic Table</span>
 			<div id="addHere_2" class="unit_divs"></div>
 			
 			<button onclick="unit(3);">Unit 3 Answers</button>
+			<span>Chemical Reactions</span>
 			<div id="addHere_3" class="unit_divs"></div>
 			
 			<button onclick="unit(4);">Unit 4 Answers</button>
+			<span>Bonding Basics</span>
 			<div id="addHere_4" class="unit_divs"></div>
 			
 			<button onclick="unit(5);">Unit 5 Answers</button>
+			<span>Structure and Properties</span>
 			<div id="addHere_5" class="unit_divs"></div>
 			
 			<button onclick="unit(6);">Unit 6 Answers</button>
+			<span>Stoichiometry</span>
 			<div id="addHere_6" class="unit_divs"></div>
 			
 			<button onclick="unit(7);">Unit 7 Answers</button>
+			<span>Gases</span>
 			<div id="addHere_7" class="unit_divs"></div>
 			
 			<button onclick="unit(8);">Unit 8 Answers</button>
+			<span>Solutions</span>
 			<div id="addHere_8" class="unit_divs"></div>
 			
 			<button onclick="unit(9);">Unit 9 Answers</button>
+			<span>Acids and Bases</span>
 			<div id="addHere_9" class="unit_divs"></div>
+			
+			<button onclick="unit(10);">Unit 10 Answers</button>
+			<span>Critical Thinking in AP Chemistry</span>
+			<div id="addHere_10" class="unit_divs"></div>
+			
+			<button onclick="unit(11);">Unit 11 Answers</button>
+			<span>Thermochemistry</span>
+			<div id="addHere_11" class="unit_divs"></div>
+			
+			<button onclick="unit(12);">Unit 12 Answers</button>
+			<span>Equilibrium</span>
+			<div id="addHere_12" class="unit_divs"></div>
+			
+			<button onclick="unit(13);">Unit 13 Answers</button>
+			<span>Kinetics</span>
+			<div id="addHere_13" class="unit_divs"></div>
+			
+			<button onclick="unit(14);">Unit 14 Answers</button>
+			<span>Electrochemistry</span>
+			<div id="addHere_14" class="unit_divs"></div>
+			
+			<button onclick="unit(15);">Unit 15 Answers</button>
+			<span>Photoelectron Spectroscopy</span>
+			<div id="addHere_15" class="unit_divs"></div>
 		</div>
 		<script>
 			var unit = function(unitNum) {
@@ -120,6 +154,24 @@
 				}
 				else if(unitNum == 9) {
 					topicTitle = "Acids_and_Bases";
+				}
+				else if(unitNum == 10) {
+					topicTitle = "Critical_THinking_in_AP_Chemistry";
+				}
+				else if(unitNum == 11) {
+					topicTitle = "Thermochemistry";
+				}
+				else if(unitNum == 12) {
+					topicTitle = "Equilibrium";
+				}
+				else if(unitNum == 13) {
+					topicTitle = "Kinetics";
+				}
+				else if(unitNum == 14) {
+					topicTitle = "Electrochemistry";
+				}
+				else if(unitNum == 15) {
+					topicTitle = "Photoelectron_Spectroscopy";
 				}
 				else {
 					topicTitle = "";
