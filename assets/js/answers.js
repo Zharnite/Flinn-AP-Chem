@@ -49,7 +49,7 @@ var unit = function(unitNum) {
 		topicTitle = "Electrochemistry";
 	}
 	else if(unitNum == 15) {
-		topicTitle = "Photoelectron_Spectroscopy";
+		topicTitle = "Photoelectron_Spectroscopy_and_Mass_Spectrometry";
 	}
 	else {
 		topicTitle = "";
